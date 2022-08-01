@@ -7,6 +7,8 @@ import (
 )
 
 /*
+// esta función demuestra como el middleware es un intemediario por donde puede
+// pasar todo y llevar un log/bitacora
 func WriteToConsole(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Hit the page")
